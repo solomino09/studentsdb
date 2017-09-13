@@ -3,11 +3,194 @@
     <head>
         <meta charset="utf-8">
         <title>Сервис учета студентов</title>
-        <meta name="description"
-              value="Система учета сдентов учебного заведения"
+        <meta name="description" value="Система учета сдентов учебного заведения"
+
+        <!-- Include Styles-->
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+
+
     </head>
     <body>
-        <h1>Вітаю вас на нашій сторінці!</h1>
-        <p>Поки тут порожньо, але незабаром ми матимемо список студентів</p>
+        <!--start container-->
+        <div class="container">
+            <!--start header-->
+            <div class="row" id="header">
+                <!-- logo -->
+                <div class="col-xs-8">
+                    <h1>Сервис учета студентов</h1>
+                </div>
+
+                <!-- groups selector -->
+                <div class="col-xs-4" id="group-selector">
+                    <strong>Группа:</strong>
+                    <select>
+                        <option value="">Все студенты</option>
+                        <option value="">М- 314, Пупкин Вася</option>
+                        <option value="">МтМ - 22, Корост Андрей</option>
+                    </select>
+                </div>
+            </div>
+            <!-- end header-->
+            <!-- start subheader-->
+            <div class="row" id="sub-header">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#">Студенты</a></li>
+                        <li role="presentation"><a href="#">Посешение</a></li>
+                        <li role="presentation"><a href="#">Группы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end subheader -->
+
+            <!-- start main page content -->
+            <div class="row" id="content-columns">
+                <div class="col-xs-12" id="content-column">
+                    <!-- Status Message -->
+                    <div class="alert alert-warning" role="alert">Изменения отменены.</div>
+
+                    <h2>База студентов</h2>
+
+                    <!-- add student Button -->
+                    <a class="btn btn-primary" href="#">Добавить Студента</a>
+
+                    <div>
+                        <!-- start students listing -->
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th><a href=""> №</a></th>
+                                    <th>Фото</th>
+                                    <th><a href=""> Фамилия</a></th>
+                                    <th><a href="#"> Имя</a></th>
+                                    <th><a href="#"> № билета</a></th>
+                                    <th>Действие</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img height="30" width="30" src="./img/1.jpeg" class="img-circle"></td>
+                                    <td><a title="Редактировать" href="#">Корост</a></td>
+                                    <td><a title="Редактировать" href="#">Андрей</a></td>
+                                    <td>2123</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Действие
+                                            <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1"
+                                                       href="#">Посещение</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1"
+                                                       href="#">Редактирование</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1"
+                                                       href="#">Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img height="30" width="30" src="./img/2.png" class="img-circle"></td>
+                                    <td><a title="Редактировать" href="#">Пупкин</a></td>
+                                    <td><a title="Редактировать" href="#">Вася</a></td>
+                                    <td>2123</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Действие
+                                            <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1"
+                                                       href="#">Посещение</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1"
+                                                       href="#">Редактирование</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1"
+                                                       href="#">Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><img height="30" width="30" src="./img/3.jpg" class="img-circle"></td>
+                                    <td><a title="Редактировать" href="#">Иванов</a></td>
+                                    <td><a title="Редактировать" href="#">Иван</a></td>
+                                    <td>2123</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Действие
+                                            <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1"
+                                                       href="#">Посещение</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1"
+                                                       href="#">Редактирование</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1"
+                                                       href="#">Удалить</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end students listing -->
+                        <nav>
+                            <ul class="pagination">
+                                <li><a href="#">&laquo;</a> </li>
+                                <li><a href="#">1</a> </li>
+                                <li class="active"><a href="#">2</a> </li>
+                                <li><a href="#">3</a> </li>
+                                <li><a href="#">4</a> </li>
+                                <li><a href="#">5</a> </li>
+                                <li><a href="#">&raquo;</a> </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end main content -->
+
+            <!-- start footer -->
+            <div class="row" id="footer">
+                <div class="col-xs-12">
+                    &copy; 2017 Сервис учета студентов
+                </div>
+            </div>
+            <!-- end footer -->
+
+        </div>
+        <!-- end conteiner -->
+
+        <!-- Javascripts Section-->
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
     </body>
 </html>
+
+
