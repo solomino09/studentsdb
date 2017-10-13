@@ -29,12 +29,13 @@ urlpatterns = [
     url(r'^students/(?P<sid>\d+)/delete/$', views.students_delete, name='students_delete'),
 
     # Groups urls
-    url(r'^groups$', views.groups, name='groups'),
+    url(r'^groups$', views.groups_list, name='groups'),
     url(r'^groups/add/$', views.groups_add, name='groups_add'),
     url(r'^groups/(?P<gid>\d+)/edit/$', views.groups_edit, name='groups_edit'),
     url(r'^groups/(?P<gid>\d+)/delete/$', views.groups_delete, name='groups_delete'),
 
     # Journal urls
+    #url(r'^journal$', views.students_list, name='journal'),
     url(r'^journal$', views.journal_list, name='journal'),
     url(r'^journal/(?P<jid>\d+)/student/$', views.journal_student, name='journal_student'),
 
