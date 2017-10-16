@@ -44,12 +44,6 @@
         </tbody>
     </table>
     <!-- end students listing -->
-    <nav>
-        <ul class="pagination">
-            <li><a href="#">1</a> </li>
-            <li class="active"><a href="#">2</a> </li>
-            <li><a href="#">Дальше</a> </li>
-        </ul>
-    </nav>
+    {% include "students/pagination.html" %}
 
 {% endblock content %}
